@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import BackgroundImage from "./Components/Background";
 import Navbar from "./Components/Navbar";
+import Main from "./Components/Main";
 
 function App() {
   const action = useNavigationType();
@@ -23,12 +24,12 @@ function App() {
     let title = "";
     let metaDescription = "";
 
-    switch (pathname) {
+    /* switch (pathname) {
       case "/":
         title = "";
         metaDescription = "";
         break;
-    }
+    } */
 
     if (title) {
       document.title = title;
@@ -45,9 +46,11 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Navbar />} />
-    </Routes>
+    <div className="relative w-screen h-screen overflow-hidden">
+      <BackgroundImage />
+      <Navbar />
+      <Main />
+    </div>
   );
 }
 export default App;

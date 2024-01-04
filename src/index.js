@@ -36,9 +36,6 @@ root.render(
     </StyledEngineProvider>
  </BrowserRouter>
 );
-root.render(
-  <div>
-  </div>
-);
+
 
 reportWebVitals();

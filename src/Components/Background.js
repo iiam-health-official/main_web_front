@@ -1,10 +1,10 @@
 const BackgroundImage = () => {
     return (
       <img
-        className="w-[1283px] h-[668px] overflow-hidden"
-        alt=""
-        src="./background.svg"
-      />
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      alt=""
+      src="./background.svg"
+    />
     );
   };
   
