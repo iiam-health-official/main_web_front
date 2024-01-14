@@ -1,34 +1,69 @@
-import { Button } from "@mui/material";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const onProductClick = useCallback(() => {
+    // Still left to do
+  }, []);
+
+  const onNewsClick = useCallback(() => {
+    navigate("/news-page");
+  }, [navigate]);
+
+  const onAboutUsClick = useCallback(() => {
+    // Still left to do
+  }, []);
+
   return (
     <nav
-      className="m-0 bg-gray w-full overflow-hidden flex flex-row items-center justify-between py-[9px] px-[20px] box-border text-left text-[35px] text-white font-arial"
+      className="m-0 bg-gray w-[100vw] overflow-hidden flex flex-row items-center justify-between py-[9px] px-[30px] box-border text-left text-[35px] text-white font-arial"
       id="nav"
     >
-      <div className="w-[443px] shrink-0 flex flex-row items-center justify-start">
+      <div className="flex-1 flex flex-row items-center justify-between">
+        <div className="w-[443px] flex flex-row items-center justify-between">
+          <img
+            className="relative w-[71px] h-[71px] object-cover"
+            alt="Logo"
+            src="/Logo_SQ_Trans.png"
+          />
+          <p className="m-0 relative font-bold">IIAM Health Solutions</p>
+        </div>
+        <div className="w-[650px] overflow-hidden shrink-0 flex flex-row items-center justify-between md:hidden">
+          <ul className="m-0 flex-1 overflow-hidden flex flex-row items-center justify-between py-0 px-5">
+            <button
+              className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 relative text-base font-semibold font-montserrat text-white text-center inline-block [list-style:none]"
+              onClick={onProductClick}
+            >
+              Product
+            </button>
+            <button
+              className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 relative text-base font-semibold font-montserrat text-white text-center inline-block [list-style:none]"
+              onClick={onNewsClick}
+            >
+              News
+            </button>
+            <button
+              className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 relative text-base font-semibold font-montserrat text-white text-center inline-block [list-style:none]"
+              onClick={onAboutUsClick}
+            >
+              About Us
+            </button>
+          </ul>
+          <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue rounded-4xl flex flex-row items-center justify-center hover:bg-darkcyan">
+            <p className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0">
+              Book A Demo
+            </p>
+          </button>
+        </div>
         <img
-          className="relative w-[71px] h-[71px] object-cover"
-          alt="Logo"
-          src="./Logo_SQ_Trans.png"
+          className="relative w-[31px] h-[31px] overflow-hidden shrink-0 hidden md:flex"
+          alt=""
+          src="/hamburger-menu.svg"
         />
-        <a href="/" className="m-0 no-underline text-white relative font-bold flex items-center w-[430px] shrink-0">
-          IIAM Health Solutions
-        </a>
-      </div>
-      <div className="w-[666px] overflow-hidden shrink-0 flex flex-row items-center justify-start gap-[41px] text-center text-base font-montserrat">
-        <ul className="m-0 flex-1 overflow-hidden flex flex-row  list-none items-center justify-end">
-          <li className="flex-1 relative font-semibold">Product</li>
-          <li className="flex-1 relative font-semibold "> News</li>
-          <li className="flex-1 relative font-semibold">About Us</li>
-        </ul>
-        <Button color="primary" name="Book A Demo" variant="contained">
-          Book A Demo
-        </Button>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-

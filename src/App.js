@@ -5,9 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import BackgroundImage from "./Components/Background";
-import Navbar from "./Components/Navbar";
-import Main from "./Components/Main";
+import LandingPage from "./Pages/LandingPage";
+import NewsPage from "./Pages/NewsPage";
 
 function App() {
   const action = useNavigationType();
@@ -24,12 +23,16 @@ function App() {
     let title = "";
     let metaDescription = "";
 
-    /* switch (pathname) {
+    switch (pathname) {
       case "/":
-        title = "";
+        title = "Home";
         metaDescription = "";
         break;
-    } */
+      default:
+        title = "404 Not Found";
+        metaDescription = "";
+        break;
+    }
 
     if (title) {
       document.title = title;
@@ -46,11 +49,18 @@ function App() {
   }, [pathname]);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
-      <BackgroundImage />
-      <Navbar />
-      <Main />
-    </div>
+    <Routes>
+    <Route path="/" element={<LandingPage />} />
+    <Route path="/news-page" element={<NewsPage />} />
+  </Routes>
   );
 }
 export default App;
+
+
+{/* <>
+      <BackgroundImage />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+      </> */}
