@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const onHomeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
   const onProductClick = useCallback(() => {
     // Still left to do
   }, []);
@@ -21,14 +24,16 @@ const Navbar = () => {
       id="nav"
     >
       <div className="flex-1 flex flex-row items-center justify-between">
-        <div className="w-[443px] flex flex-row items-center justify-between">
+      <button className="cursor-pointer [border:none] p-0 bg-[transparent] w-[443px] flex flex-row items-center justify-between" onClick={onHomeClick}>
           <img
             className="relative w-[71px] h-[71px] object-cover"
             alt="Logo"
             src="/Logo_SQ_Trans.png"
           />
-          <p className="m-0 relative font-bold">IIAM Health Solutions</p>
-        </div>
+          <p className="m-0 relative text-[35px] font-bold font-arial text-white text-left">
+            IIAM Health Solutions
+          </p>
+        </button>
         <div className="w-[650px] overflow-hidden shrink-0 flex flex-row items-center justify-between md:hidden">
           <ul className="m-0 flex-1 overflow-hidden flex flex-row items-center justify-between py-0 px-5">
             <button

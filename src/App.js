@@ -56,11 +56,3 @@ function App() {
   );
 }
 export default App;
-
-
-{/* <>
-      <BackgroundImage />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
-      </> */}
