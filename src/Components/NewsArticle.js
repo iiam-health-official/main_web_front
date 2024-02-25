@@ -1,6 +1,14 @@
-import { useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
+import NewsPopUp from "./NewsPopUp";
+import PortalPopup from "./PortalPopup";
 
-const NewsArticle = () => {
+const NewsArticle = ({ 
+  Logo,
+  Heading,
+  Overview,
+  Date
+ }) => {
+  const [isNewsPopUpPopupOpen, setNewsPopUpPopupOpen] = useState(false);
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -30,39 +38,59 @@ const NewsArticle = () => {
       }
     };
   }, []);
+  const openNewsPopUpPopup = useCallback(() => {
+    setNewsPopUpPopupOpen(true);
+  }, []);
+
+  const closeNewsPopUpPopup = useCallback(() => {
+    setNewsPopUpPopupOpen(false);
+  }, []);
   return (
+    <>
     <div
-      className="relative rounded-3xs bg-white shadow-[10px_10px_50px_rgba(0,_0,_0,_0.08)] w-[390px] h-[371px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] text-left text-sm text-gray-100 font-paragraph-p2-regular hover:bg-aliceblue sm:w-[390px]"
-      data-animate-on-scroll
+      className="w-[440px] rounded-[10px] flex flex-col items-center justify-start py-5 px-[19px]  box-border gap-[41px] hover:bg-aliceblue  mq450:gap-[20px] bg-white shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(24px)] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] min-w-[156px] max-w-full text-left text-sm text-gray-100 font-head hover:bg-sp mq450:gap-[20px] hover:shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.5)]"
+      data-animate-on-scroll        
+      onClick={openNewsPopUpPopup}
+
     >
-      <div className="absolute top-[20px] left-[20px] w-[350px] h-[285px]">
+      <div className="self-stretch flex flex-col items-start  justify-center py-2.5 px-5 gap-[24px]">
         <img
-          className="absolute top-[0px] left-[0px] rounded-[50%] w-[70px] h-[70px] object-cover"
+          className="w-[70px] h-[70px] relative rounded-[50%] object-cover"
+          loading="eager"
           alt=""
-          src="/avater-02@2x.png"
+          src={Logo}
         />
-        <div className="absolute top-[94px] left-[0px] tracking-[-0.02em] leading-[30px] inline-block w-[350px] sm:text-sm sm:w-[350px]">
-          <p className="m-0">An Overview of IIAM</p>
+        <div className="self-stretch h-[150px] relative tracking-[-0.02em] leading-[30px] inline-block">
+          <p className="m-0 text-[18px]">{Heading}</p>
           <p className="m-0">
-            Founded in 2021, IIAM (Important Information About Me) is a desktop
-            software enabling physicians to 1) request medical information from
-            other healthcare providers, 2)
+            {Overview}
           </p>
         </div>
       </div>
-      <div className="absolute top-[273px] left-[0px] rounded-3xs bg-cadetblue-200 shadow-[10px_10px_50px_rgba(0,_0,_0,_0.08)] w-[390px] h-[98px] sm:w-[365px]" />
-      <div className="absolute top-[294px] left-[20px] w-[194px] h-14 text-lg">
-        <div className="absolute top-[0px] left-[0px] w-[194px] h-14">
-          <p className="m-0 absolute top-[0px] left-[0px] tracking-[-0.02em] font-bold inline-block w-[137px]">
-            Dec 2021
-          </p>
-          <p className="m-0 absolute top-[26px] left-[0px] tracking-[-0.02em] leading-[30px] inline-block w-[194px]">
+      <div className="self-stretch flex flex-row items-start justify-start pt-2.5 pb-5 pr-2.5 pl-5 text-lg">
+        <div className="w-[194px] flex flex-col items-start justify-start gap-[4px]">
+          <b className="w-[137px] relative tracking-[-0.02em] inline-block">
+            {Date}
+          </b>
+          <button className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-lg tracking-[-0.02em] leading-[30px] font-head text-gray-100 text-left inline-block whitespace-nowrap">
             Learn More
-          </p>
+          </button>
         </div>
       </div>
     </div>
+    {isNewsPopUpPopupOpen && (
+      <PortalPopup
+        overlayColor="rgba(113, 113, 113, 0.3)"
+        placement="Centered"
+        onOutsideClick={closeNewsPopUpPopup}
+      >
+        <NewsPopUp onClose={closeNewsPopUpPopup} />
+      </PortalPopup>
+    )}
+    </>
   );
 };
 
 export default NewsArticle;
+
+

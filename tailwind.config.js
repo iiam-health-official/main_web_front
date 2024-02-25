@@ -10,14 +10,14 @@ module.exports = {
         "cadetblue": "#19a8bd",
         "darkcyan": "#148ea1",
         "white": "#fff",
+        "blue": "#174055",
         "darkslategray": "#174055",
         "whitesmoke": "#e8eaec"
       },
       "spacing": {},
       "fontFamily": {
-        "montserrat": "Montserrat",
-        "arial": "Arial",
-        "arial-black": "'Arial Black'"
+        head: ["Inter", "sans-serif"],
+        text: ["Source Sans 3", "sans-serif"]
       },
       "borderRadius": {
         "4xl": "23px"

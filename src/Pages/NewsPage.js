@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import NewsArticle from "../Components/NewsArticle";
 import Navbar from "../Components/Navbar";
-import BackgroundImage from "../Components/Background"; 
 
 const NewsPage = () => {
   useEffect(() => {
@@ -34,40 +33,63 @@ const NewsPage = () => {
     };
   }, []);
   return (
-    <div>
-        <BackgroundImage />
-        <Navbar />
-    <section
-      className="relative w-full overflow-hidden flex flex-col items-center justify-start py-6 px-0 box-border text-center text-17xl text-white font-arial"
-      id="News"
-      >
-      <div className="self-stretch flex flex-col items-center justify-start py-[30px] px-10 gap-[57px] sm:items-center sm:justify-start sm:pl-0 sm:pr-[15px] sm:box-border">
-        <h1
-          className="m-0 self-stretch relative text-inherit font-bold font-inherit [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] sm:text-17xl"
-          data-animate-on-scroll
-          >
-          News
-        </h1>
-        <ul className="m-0 self-stretch flex flex-row flex-wrap items-center justify-center gap-[90px] sm:self-stretch sm:w-auto sm:flex-row sm:flex-wrap sm:gap-[30px] sm:items-center sm:justify-center">
-          <NewsArticle />
-          <NewsArticle />
-          <NewsArticle />
-        </ul>
-        <div className="self-stretch flex flex-row items-end justify-center">
-          <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue-100 rounded-4xl flex flex-row items-center justify-start gap-[10px] hover:bg-darkcyan-100 active:animate-[1s_ease_0s_infinite_normal_none_shadow-drop-bottom] active:opacity-[1]">
-            <p className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0">
-              Show More
-            </p>
-            <img
-              className="relative w-[30px] h-[30px] object-contain"
-              alt=""
-              src="/leftarrow@2x.png"
-              />
-          </button>
+    <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
+      <Navbar />  
+    <div className="w-full relative flex flex-col items-center justify-start py-[54px] text-[36px] pt-[100px] px-5 box-border gap-[57px] tracking-[normal] mq750:gap-[28px]">
+      <header
+        className="w-[1120px] h-[41px] relative font-bold font-head text-white text-center flex items-center justify-center [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] max-w-full"
+        data-animate-on-scroll
+        >
+        <p>News</p>
+      </header>
+      <section className="self-stretch overflow-hidden flex flex-row flex-wrap items-start justify-center p-[30px] box-border gap-[90px] max-w-full mq450:pt-5 mq450:pb-5 mq450:box-border mq750:gap-[22px] mq750:pl-9 mq750:pr-9 mq750:box-border mq1125:gap-[45px] mq1125:pl-[72px] mq1125:pr-[72px] mq1125:box-border">
+        <NewsArticle 
+        Logo="/avater-02@2x.png" 
+        Heading="News 1"
+        Overview="Founded in 2021, IIAM (Important Information About Me) is a desktop software enabling physicians to 1) request medical information from other healthcare providers, 2)"
+        Date ="May 20, 2022"
+        />
+        <NewsArticle 
+        Logo="/avater-02@2x.png" 
+        Heading="News 2"
+        Overview="Founded in 2021, IIAM (Important Information About Me) is a desktop software enabling physicians to 1) request medical information from other healthcare providers, 2)"
+        Date="May 20, 2021"
+        />
+        <NewsArticle 
+        Logo="/avater-02@2x.png" 
+        Heading="News 3"
+        Overview="Founded in 2021, IIAM (Important Information About Me) is a desktop software enabling physicians to 1) request medical information from other healthcare providers, 2)"
+        Date="May 20, 2021"
+        /><NewsArticle 
+        Logo="/avater-02@2x.png" 
+        Heading="IIAM Acquired"
+        Overview="Founded in 2021, IIAM (Important Information About Me) is a desktop software enabling physicians to 1) request medical information from other healthcare providers, 2)"
+        Date="May 20, 2021"
+        /><NewsArticle 
+        Logo="/avater-02@2x.png" 
+        Heading="IIAM Acquired"
+        Overview="Founded in 2021, IIAM (Important Information About Me) is a desktop software enabling physicians to 1) request medical information from other healthcare providers, 2)"
+        Date="May 20, 2021"
+        />
+      </section>
+      <button
+        className="cursor-pointer [border:none] py-[9px] px-[29px] bg-darkslategray w-[218px] rounded-4xl flex flex-row items-center justify-start box-border gap-[10px] whitespace-nowrap hover:bg-slategray active:animate-[1s_ease_0s_infinite_normal_none_shadow-drop-bottom] active:opacity-[1]"
+        id="Show-More"
+        >
+        <div className="h-[23px] flex-1 relative text-sm font-semibold font-head text-white text-center flex items-center justify-center">
+          Show More
         </div>
-      </div>
-    </section>
+        <div className="h-[30px] w-[30px] relative flex items-center justify-center">
+          <img
+            className="h-full w-full  object-contain absolute "
+            alt=""
+            src="/leftarrow@2x.png"
+            />
+        </div>
+      </button>
     </div>
+    </div>
+    
   );
 };
 

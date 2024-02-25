@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import NewsPage from "./Pages/NewsPage";
+import ProductPage from "./Pages/ProductPage";
+import AboutUs from "./Pages/TeamPage";
 
 function App() {
   const action = useNavigationType();
@@ -28,6 +30,18 @@ function App() {
         title = "Home";
         metaDescription = "";
         break;
+      case "/news-page":
+          title = "News";
+          metaDescription = "";
+          break;
+      case "/product-page":
+          title = "Product";
+          metaDescription = "";
+          break;
+      case "/about-page":
+          title = "About";
+          metaDescription = "";
+          break;
       default:
         title = "404 Not Found";
         metaDescription = "";
@@ -52,6 +66,8 @@ function App() {
     <Routes>
     <Route path="/" element={<LandingPage />} />
     <Route path="/news-page" element={<NewsPage />} />
+    <Route path="/product-page" element={<ProductPage />} />
+    <Route path="/about-page" element={<AboutUs />} />
   </Routes>
   );
 }

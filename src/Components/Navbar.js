@@ -7,30 +7,30 @@ const Navbar = () => {
     navigate("/");
   }, [navigate]);
   const onProductClick = useCallback(() => {
-    // Still left to do
-  }, []);
+    navigate("/product-page");
+  }, [navigate]);
 
   const onNewsClick = useCallback(() => {
     navigate("/news-page");
   }, [navigate]);
 
   const onAboutUsClick = useCallback(() => {
-    // Still left to do
-  }, []);
+    navigate("/about-page");
+  }, [navigate]);
 
   return (
     <nav
-      className="m-0 bg-gray w-[100vw] overflow-hidden flex flex-row items-center justify-between py-[9px] px-[30px] box-border text-left text-[35px] text-white font-arial"
+      className="fixed m-0 w-[100vw] overflow-hidden flex flex-row items-center justify-between py-[9px] px-[30px] box-border text-left text-[35px] text-white font-arial bg-blue z-50"
       id="nav"
     >
       <div className="flex-1 flex flex-row items-center justify-between">
-      <button className="cursor-pointer [border:none] p-0 bg-[transparent] w-[443px] flex flex-row items-center justify-between" onClick={onHomeClick}>
+      <button className="cursor-pointer [border:none] p-0 bg-[transparent] w-[443px] flex flex-row items-center justify-left" onClick={onHomeClick}>
           <img
             className="relative w-[71px] h-[71px] object-cover"
             alt="Logo"
             src="/Logo_SQ_Trans.png"
           />
-          <p className="m-0 relative text-[35px] font-bold font-arial text-white text-left">
+          <p className="m-0 relative text-[35px] font-bold font-arial md:text-[20px] text-white text-left">
             IIAM Health Solutions
           </p>
         </button>
