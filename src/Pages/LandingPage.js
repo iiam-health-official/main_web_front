@@ -86,7 +86,7 @@ const LandingPage = () => {
             </div>
         </section>
         <section
-            className="self-stretch overflow-hidden flex flex-row-reverse items-center justify-center py-10 px-10 gap-[22px] text-left text-[48px] text-whitesmoke md:h-auto md:flex-col md:gap-[50px] md:items-center md:justify-center md:pl-20 md:pr-20 md:box-border sm:gap-[0px] sm:pl-5 sm:pr-5 sm:box-border"
+            className="self-stretch overflow-hidden flex flex-row-reverse items-center justify-center py-10 px-10 gap-[22px] text-left text-[48px] text-white md:h-auto md:flex-col md:gap-[50px] md:items-center md:justify-center md:pl-20 md:pr-20 md:box-border sm:gap-[0px] sm:pl-5 sm:pr-5 sm:box-border"
             id="main"
             >
             <div className="flex-1 flex flex-col items-start justify-start px-20 gap-[40px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in]  md:items-center md:justify-start md:pl-0 md:pr-0 md:box-border md:flex-[unset] md:self-stretch sm:gap-[30px]" data-animate-on-scroll >
