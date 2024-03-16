@@ -17,16 +17,16 @@ const content = [{
   Text:
     "If patients came in with complete records, I’d probably be able to see an additional 5 new patients a day.” -Arizona-Based Neurosurgeon"
 }
-// {
-//   Name: "Bay Area Development & Insight Manager",
-//   Text:
-//     "You’ve identified a MASSIVE pain point. How can I write you a check?"
-// }
-// ,{
-//   Name: "Arizona-Based Neurosurgeon",
-//   Text:
-//     "If patients came in with complete records, I’d probably be able to see an additional 5 new patients a day.” -Arizona-Based Neurosurgeon"
-// }
+,{
+  Name: "Arizona-Based Neurosurgeon",
+  Text:
+    "If patients came in with complete records, I’d probably be able to see an additional 5 new patients a day.” -Arizona-Based Neurosurgeon"
+}
+,{
+  Name: "Arizona-Based Neurosurgeon",
+  Text:
+    "If patients came in with complete records, I’d probably be able to see an additional 5 new patients a day.” -Arizona-Based Neurosurgeon"
+}
 ]
 
 const Testimonial = () => {
@@ -50,12 +50,12 @@ return (
               {Text.Text}
             </div>
             <div className="flex flex-row items-center justify-center gap-[19px] max-w-full text-lg mq700:flex-wrap">
-              <img
+              {/* <img
                 className="h-[76px] w-[74.1px] relative object-contain"
                 loading="eager"
                 alt=""
                 src="/user-feedback-image@2x.png"
-                />
+                /> */}
               <div className="flex flex-col items-start justify-start gap-[10px]">
                 <div className="relative leading-[32px] opacity-[0.4]">
                   {Text.Name}

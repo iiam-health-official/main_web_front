@@ -41,25 +41,24 @@ const ProductPage = () => {
             className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit flex items-center justify-center [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] mq450:text-3xl mq900:text-10xl"
             data-animate-on-scroll
           >
-            Product
+            One Stop Solution
           </h1>
-          <div
-            className="self-stretch h-[460px] overflow-hidden shrink-0 flex flex-col items-center justify-start py-5 px-[70px] box-border [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] max-w-full mq900:pl-[35px] mq900:pr-[35px] mq900:box-border"
-            data-animate-on-scroll
-          >
-            <div className="w-[738px] flex-1 rounded-t-3xl rounded-b-none [background:linear-gradient(108.51deg,_rgba(255,_255,_255,_0.4),_rgba(255,_255,_255,_0.1)_96.3%)] shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(20px)] box-border overflow-hidden flex flex-col items-center justify-start pt-10 px-[49px] pb-0 relative gap-[10px] max-w-full border-[1px] border-solid border-gray-600 mq900:pl-6 mq900:pr-6 mq900:box-border">
-              <img
-                className="w-full h-full absolute my-0 mx-[!important] top-[0px] left-[0.5px] rounded-t-2xl rounded-b-none object-cover opacity-[100] mix-blend-overlay"
-                alt=""
-              />
-              <img
-                className="self-stretch flex-1 relative rounded-tl-xl rounded-tr-[30px] rounded-b-none max-w-full overflow-hidden max-h-full object-cover z-[1]"
-                loading="eager"
-                alt=""
-                src="/image.png"
-              />
-            </div>
-          </div>
+          <section className="w-[1082px] flex flex-col items-center justify-start py-0 px-5 box-border max-w-full">
+          <img
+            className="self-stretch relative max-w-full overflow-hidden max-h-full object-cover"
+            loading="lazy"
+            alt=""
+            src="/clip-path-group@2x.png"
+          />
+        </section>
+        <div className="self-stretch flex flex-col items-center justify-center">
+          <img
+            className="w-[171px] h-[15px] relative object-contain"
+            loading="lazy"
+            alt=""
+            src="/line1@2x.png"
+          />
+        </div>
           <div
             className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[30px] px-10 box-border [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in]opacity-[0] max-w-full text-lg font-bahnschrift"
             data-animate-on-scroll
@@ -131,7 +130,7 @@ const ProductPage = () => {
           </div>
           <div className="self-stretch flex flex-col items-center justify-start py-[15px] px-0 gap-[70px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in]" data-animate-on-scroll>
           <h1 className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit inline-block [text-shadow:-2px_4px_0px_#19a8bd] sm:text-[25px]">
-            Why IIAM?
+            What makes IIAM No-Brainer!
           </h1>
           <div className="self-stretch flex flex-col items-center justify-start text-6xl-4 font-paragraph-p2-regular">
             <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[100px]">

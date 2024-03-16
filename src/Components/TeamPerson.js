@@ -24,19 +24,19 @@ const TeamPerson = ({ Image, Name, Position, Description }) => {
           alt=""
           src={Image}
         />
-        <div className="w-[158px] relative text-xl font-head text-black text-center inline-block h-[15px] shrink-0">
-          Person 1
+        <div className="w-[158px] relative text-xl font-head text-black text-center text-[15px] font-bold inline-block h-[15px] shrink-0">
+          {Name}
         </div>
         <div className="w-[158px] relative text-smi font-head text-black text-center flex items-center h-[29px] shrink-0">
           <span className="w-full">
             <p className="[margin-block-start:0] [margin-block-end:5px]">
-              ML Specialist
+              {Position}
             </p>
             <p className="m-0">Co-Founder</p>
           </span>
         </div>
       </button>
-      {isPersonPopUpPopupOpen && (
+      {/* {isPersonPopUpPopupOpen && (
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"
           placement="Centered"
@@ -44,7 +44,7 @@ const TeamPerson = ({ Image, Name, Position, Description }) => {
         >
           <PersonPopUp onClose={closePersonPopUpPopup} />
         </PortalPopup>
-      )}
+      )} */}
     </>
   );
 };

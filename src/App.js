@@ -9,6 +9,7 @@ import LandingPage from "./Pages/LandingPage";
 import NewsPage from "./Pages/NewsPage";
 import ProductPage from "./Pages/ProductPage";
 import AboutUs from "./Pages/TeamPage";
+import BookADemo from "./Pages/BookDemo";
 
 function App() {
   const action = useNavigationType();
@@ -68,6 +69,7 @@ function App() {
     <Route path="/news-page" element={<NewsPage />} />
     <Route path="/product-page" element={<ProductPage />} />
     <Route path="/about-page" element={<AboutUs />} />
+    <Route path="/demo-page" element={<BookADemo />} />
   </Routes>
   );
 }

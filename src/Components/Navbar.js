@@ -18,6 +18,10 @@ const Navbar = () => {
     navigate("/about-page");
   }, [navigate]);
 
+  const onBookDemoClick = useCallback(() => {
+    navigate("/demo-page");
+  }, [navigate]);
+
   return (
     <nav
       className="fixed m-0 w-[100vw] overflow-hidden flex flex-row items-center justify-between py-[9px] px-[30px] box-border text-left text-[35px] text-white font-arial bg-blue z-50"
@@ -56,7 +60,9 @@ const Navbar = () => {
             </button>
           </ul>
           <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue rounded-4xl flex flex-row items-center justify-center hover:bg-darkcyan">
-            <p className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0">
+            <p className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0"
+            onClick={onBookDemoClick}
+            >
               Book A Demo
             </p>
           </button>
