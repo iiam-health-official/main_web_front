@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
+import LandingPage from "./Pages/LandingPage";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,3 +14,12 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//     <LandingPage />
+//   </React.StrictMode>
+// );

@@ -1,8 +1,7 @@
 {
   "name": "IIAM",
   "version": "0.9.1",
-  "homepage": "https://iiam-health-official.github.io/main_web_front/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@react-three/drei": "^9.97.0",
     "@react-three/fiber": "^8.15.15",
@@ -20,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.1",
     "react-tilt": "^1.0.2",
+    "serve": "^14.2.1",
     "three": "^0.160.1",
     "web-vitals": "^2.1.4"
   },
