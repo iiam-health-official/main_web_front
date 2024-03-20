@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const PersonPopUp = ({ onClose }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
+      "[data-animate-on-scroll]",
     );
     const observer = new IntersectionObserver(
       (entries) => {
@@ -17,7 +17,7 @@ const PersonPopUp = ({ onClose }) => {
       },
       {
         threshold: 0.15,
-      }
+      },
     );
 
     for (let i = 0; i < scrollAnimElements.length; i++) {
@@ -39,7 +39,7 @@ const PersonPopUp = ({ onClose }) => {
         <img
           className="w-[115px] relative rounded-121xl-5 h-[115px] object-cover"
           alt=""
-          src="/person-1@2x.png"
+          src={Image}
         />
         <div className="w-[658px] relative tracking-[-0.02em] leading-[30px] inline-block h-[148px] shrink-0 sm:text-sm sm:w-[350px]">
           <p className="m-0">An Overview of IIAM</p>

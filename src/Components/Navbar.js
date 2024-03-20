@@ -28,7 +28,10 @@ const Navbar = () => {
       id="nav"
     >
       <div className="flex-1 flex flex-row items-center justify-between">
-      <button className="cursor-pointer [border:none] p-0 bg-[transparent] w-[443px] flex flex-row items-center justify-left" onClick={onHomeClick}>
+        <button
+          className="cursor-pointer [border:none] p-0 bg-[transparent] w-[443px] flex flex-row items-center justify-left"
+          onClick={onHomeClick}
+        >
           <img
             className="relative w-[71px] h-[71px] object-cover"
             alt="Logo"
@@ -60,8 +63,9 @@ const Navbar = () => {
             </button>
           </ul>
           <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue rounded-4xl flex flex-row items-center justify-center hover:bg-darkcyan">
-            <p className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0"
-            onClick={onBookDemoClick}
+            <p
+              className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0"
+              onClick={onBookDemoClick}
             >
               Book A Demo
             </p>

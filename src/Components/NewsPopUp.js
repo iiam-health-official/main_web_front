@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const NewsPopUp = ({ onClose }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
+      "[data-animate-on-scroll]",
     );
     const observer = new IntersectionObserver(
       (entries) => {
@@ -17,7 +17,7 @@ const NewsPopUp = ({ onClose }) => {
       },
       {
         threshold: 0.15,
-      }
+      },
     );
 
     for (let i = 0; i < scrollAnimElements.length; i++) {

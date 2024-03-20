@@ -125,7 +125,7 @@ const PortalPopup = ({
       }
       e.stopPropagation();
     },
-    [onOutsideClick]
+    [onOutsideClick],
   );
 
   return (

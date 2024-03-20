@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53782583.css",
+    "main.js": "/static/js/main.a251ce9c.js",
+    "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
+    "static/media/teamperson@3x.png": "/static/media/teamperson@3x.21519820fa85a19da5dc.png",
+    "static/media/Background.svg": "/static/media/Background.31d91c26bea7faa40bdd.svg",
+    "static/media/Logo_SQ_Trans.png@2x.png": "/static/media/Logo_SQ_Trans.png@2x.f2198fc43411b4f6d0ef.png",
+    "index.html": "/index.html",
+    "main.53782583.css.map": "/static/css/main.53782583.css.map",
+    "main.a251ce9c.js.map": "/static/js/main.a251ce9c.js.map",
+    "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53782583.css",
+    "static/js/main.a251ce9c.js"
+  ]
+}

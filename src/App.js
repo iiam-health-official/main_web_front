@@ -32,17 +32,21 @@ function App() {
         metaDescription = "";
         break;
       case "/news-page":
-          title = "News";
-          metaDescription = "";
-          break;
+        title = "News";
+        metaDescription = "";
+        break;
       case "/product-page":
-          title = "Product";
-          metaDescription = "";
-          break;
+        title = "Product";
+        metaDescription = "";
+        break;
       case "/about-page":
-          title = "About";
-          metaDescription = "";
-          break;
+        title = "About";
+        metaDescription = "";
+        break;
+      case "/demo-page":
+        title = "Book a Demo";
+        metaDescription = "";
+        break;
       default:
         title = "404 Not Found";
         metaDescription = "";
@@ -55,7 +59,7 @@ function App() {
 
     if (metaDescription) {
       const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
+        'head > meta[name="description"]',
       );
       if (metaDescriptionTag) {
         metaDescriptionTag.content = metaDescription;
@@ -65,12 +69,12 @@ function App() {
 
   return (
     <Routes>
-    <Route path="/" element={<LandingPage />} />
-    <Route path="/news-page" element={<NewsPage />} />
-    <Route path="/product-page" element={<ProductPage />} />
-    <Route path="/about-page" element={<AboutUs />} />
-    <Route path="/demo-page" element={<BookADemo />} />
-  </Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/news-page" element={<NewsPage />} />
+      <Route path="/product-page" element={<ProductPage />} />
+      <Route path="/about-page" element={<AboutUs />} />
+      <Route path="/demo-page" element={<BookADemo />} />
+    </Routes>
   );
 }
 export default App;

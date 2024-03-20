@@ -27,7 +27,7 @@ const Fieldset = ({
 
   return (
     <div
-      className="w-full flex flex-row flex-wrap items-start justify-start pt-0 pb-[17.999999999999986px] pr-2 pl-0 box-border gap-[8px] max-w-[480px] shrink-0 [debug_commit:612783b] text-left text-sm text-darkslategray-300 font-head mq675:max-w-full"
+      className="w-full flex flex-row flex-wrap items-start justify-start pt-0 pb-[17.999999999999986px] pr-2 pl-0 box-border gap-[8px] max-w-[480px] shrink-0 [debug_commit:612783b] text-left text-sm text-white font-head mq675:max-w-full"
       style={fieldsetStyle}
     >
       <div className="flex-1 flex flex-col items-start justify-start gap-[4.300000000000011px] min-w-[151px]">
