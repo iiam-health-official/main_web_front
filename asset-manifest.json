@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/main_web_front/static/css/main.4debe457.css",
+    "main.js": "/main_web_front/static/js/main.5597cf30.js",
+    "static/js/787.d4aba7ab.chunk.js": "/main_web_front/static/js/787.d4aba7ab.chunk.js",
+    "static/media/teamperson@3x.png": "/main_web_front/static/media/teamperson@3x.21519820fa85a19da5dc.png",
+    "static/media/Background.svg": "/main_web_front/static/media/Background.31d91c26bea7faa40bdd.svg",
+    "static/media/Logo_SQ_Trans.png@2x.png": "/main_web_front/static/media/Logo_SQ_Trans.png@2x.f2198fc43411b4f6d0ef.png",
+    "index.html": "/main_web_front/index.html",
+    "main.4debe457.css.map": "/main_web_front/static/css/main.4debe457.css.map",
+    "main.5597cf30.js.map": "/main_web_front/static/js/main.5597cf30.js.map",
+    "787.d4aba7ab.chunk.js.map": "/main_web_front/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4debe457.css",
+    "static/js/main.5597cf30.js"
+  ]
+}
