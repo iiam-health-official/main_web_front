@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "homepage": "https://iiam-health-official.github.io/main_web_front",
-  "private": true,
+  "name": "IIAM",
+  "version": "0.9.1",
+  "homepage": "https://iiam-health-official.github.io/main_web_front/",
+  "private": false,
   "dependencies": {
     "@react-three/drei": "^9.97.0",
     "@react-three/fiber": "^8.15.15",
