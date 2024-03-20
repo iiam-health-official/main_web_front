@@ -70,7 +70,7 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/" element={<LandingPage />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/news-page" element={<NewsPage />} />
       <Route path="/product-page" element={<ProductPage />} />
       <Route path="/about-page" element={<AboutUs />} />
