@@ -43,7 +43,7 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
   return (
     <>
       <div
-        className="w-[440px] rounded-[10px] flex flex-col items-center justify-start py-5 px-[19px]  box-border gap-[41px] hover:bg-aliceblue  mq450:gap-[20px] bg-white shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(24px)] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] min-w-[156px] max-w-full text-left text-sm text-gray-100 font-head hover:bg-sp mq450:gap-[20px] hover:shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.5)]"
+        className="w-[440px] rounded-[10px] flex flex-col items-center justify-start py-5 px-[19px]  box-border gap-[41px] hover:bg-aliceblue  mq450:gap-[20px] bg-white shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(24px)] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] min-w-[156px] max-w-full text-left text-sm text-gray-100 font-head hover:bg-sp hover:shadow-[0px_4px_24px_-1px_rgba(0,_0,_0,_0.5)]"
         data-animate-on-scroll
         onClick={openNewsPopUpPopup}
       >
