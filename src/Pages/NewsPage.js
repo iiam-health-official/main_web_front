@@ -47,26 +47,26 @@ const NewsPage = () => {
             Logo="/avater-02@2x.png"
             Heading="Machine Learning Oncology"
             Overview="IIAM's study on using machine learning for predicting head and neck cancer surgery recommendations was published in the Head and Neck journal. The research showcases the model's accuracy based on extensive patient data."
-            Date="May 20, 2021"
+            Date="Feb 12, 2024"
             LMLink="https://onlinelibrary.wiley.com/doi/10.1002/hed.27674"
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="Global Cancer Conference"
             Overview="Max Jiam, co-CTO of IIAM, presented their findings on a machine learning model for head and neck cancer surgery at the AHNS International Conference. The event was attended by leading physicians worldwide."
-            Date="May 20, 2021"
+            Date="July 12, 2023"
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="NSF Grant Achievement"
             Overview="IIAM was awarded an NSF SBIR Phase I grant for developing predictive analytics and machine learning modeling for cancer referrals. This grant facilitates technology advancement for faster patient treatment."
-            Date="May 20, 2021"
+            Date="Aug 10, 2023"
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="NSF Discovery Grant"
             Overview="Dr. Nicole Jiam and her team won an NSF Innovation Corporation Research Grant for translating digital health products into the marketplace. The program includes a $50,000 award."
-            Date="May 20, 2021"
+            Date="Nov 2, 2021"
             LMLink="https://ohns.ucsf.edu/news/ohns-resident-and-team-win-50000-grant-their-healthcare-invention"
           />
           <NewsArticle

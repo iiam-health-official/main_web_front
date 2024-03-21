@@ -37,6 +37,10 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
     setNewsPopUpPopupOpen(true);
   }, []);
 
+  const onLearnMoreClick = useCallback(() => {
+    window.open(LMLink);
+  }, []);
+
   const closeNewsPopUpPopup = useCallback(() => {
     setNewsPopUpPopupOpen(false);
   }, []);
@@ -65,9 +69,8 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
               {Date}
             </b>
             <a
-              href={LMLink}
               className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-lg tracking-[-0.02em] leading-[30px] font-head text-gray-100 text-left inline-block whitespace-nowrap"
-            >
+              onClick={onLearnMoreClick}>
               Learn More
             </a>
           </div>
