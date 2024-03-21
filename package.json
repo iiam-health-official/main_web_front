@@ -1,7 +1,7 @@
 {
   "name": "IIAM",
   "version": "0.9.1",
-  "homepage": "https://iiam-health-official.github.io/main_web_front",
+  "homepage": "https://iiam-health-official.github.io",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.97.0",
