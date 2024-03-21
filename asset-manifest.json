@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/main_web_front/static/css/main.81194904.css",
-    "main.js": "/main_web_front/static/js/main.b7329df7.js",
-    "static/js/787.6fe37b9b.chunk.js": "/main_web_front/static/js/787.6fe37b9b.chunk.js",
-    "static/media/teamperson@3x.png": "/main_web_front/static/media/teamperson@3x.21519820fa85a19da5dc.png",
-    "static/media/Background.svg": "/main_web_front/static/media/Background.31d91c26bea7faa40bdd.svg",
-    "static/media/Logo_SQ_Trans.png@2x.png": "/main_web_front/static/media/Logo_SQ_Trans.png@2x.f2198fc43411b4f6d0ef.png",
-    "index.html": "/main_web_front/index.html",
-    "main.81194904.css.map": "/main_web_front/static/css/main.81194904.css.map",
-    "main.b7329df7.js.map": "/main_web_front/static/js/main.b7329df7.js.map",
-    "787.6fe37b9b.chunk.js.map": "/main_web_front/static/js/787.6fe37b9b.chunk.js.map"
+    "main.css": "/static/css/main.82a5ab32.css",
+    "main.js": "/static/js/main.f9432060.js",
+    "static/js/787.6fe37b9b.chunk.js": "/static/js/787.6fe37b9b.chunk.js",
+    "static/media/teamperson@3x.png": "/static/media/teamperson@3x.21519820fa85a19da5dc.png",
+    "static/media/Background.svg": "/static/media/Background.31d91c26bea7faa40bdd.svg",
+    "static/media/Logo_SQ_Trans.png@2x.png": "/static/media/Logo_SQ_Trans.png@2x.f2198fc43411b4f6d0ef.png",
+    "index.html": "/index.html",
+    "main.82a5ab32.css.map": "/static/css/main.82a5ab32.css.map",
+    "main.f9432060.js.map": "/static/js/main.f9432060.js.map",
+    "787.6fe37b9b.chunk.js.map": "/static/js/787.6fe37b9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81194904.css",
-    "static/js/main.b7329df7.js"
+    "static/css/main.82a5ab32.css",
+    "static/js/main.f9432060.js"
   ]
 }
