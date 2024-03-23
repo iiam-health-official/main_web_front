@@ -7,7 +7,7 @@ const BookADemo = () => {
       <Navbar />
       <div className="w-full relative flex flex-col items-start justify-start pt-[110px] px-0 pb-[600px] box-border gap-[60px] tracking-[normal] text-center text-base text-white font-head mq675:gap-[30px_60px]">
         <div className="self-stretch relative leading-[24px] font-head">
-          Find out why Healthcare Professionals of Tomorrow care about IIAM, and
+          Find out why Healthcare Professionals of tomorrow care about IIAM, and
           how it can upscale your practices
         </div>
         <section className="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
