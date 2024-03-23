@@ -1,16 +1,50 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
-  const onLinkContainerClick = useCallback(() => {
-    window.open("https://www.facebook.com/");
-  }, []);
-
-  const onLinkContainer1Click = useCallback(() => {
-    window.open("https://www.linkedin.com/company/");
+    const onLinkContainer1Click = useCallback(() => {
+    window.open("https://www.linkedin.com/company/iiam-health/");
   }, []);
 
   const onLinkContainer2Click = useCallback(() => {
-    window.open("https://twitter.com/");
+    window.open("https://twitter.com/IIAMhealth");
+  }, []);
+  const navigate = useNavigate();
+  const onProductClick = useCallback(() => {
+    navigate("/product-page");
+  }, [navigate]);
+
+  const onNewsClick = useCallback(() => {
+    navigate("/news-page");
+  }, [navigate]);
+
+  const onAboutUsClick = useCallback(() => {
+    navigate("/about-page");
+  }, [navigate]);
+
+  const onBookDemoClick = useCallback(() => {
+    navigate("/demo-page");
+  }, [navigate]);
+
+  const onNSFFoundationClick = useCallback(() => {
+    window.open("https://www.ucsfhealth.org/");
+
+  }, []);
+  const onUCSFHealthClick = useCallback(() => {
+    window.open("https://www.nsf.gov/");
+
+  }, []);
+  const onKennedyKriegerClick = useCallback(() => {
+    window.open("https://www.kennedykrieger.org/");
+
+  }, []);
+  const onOurCompanyClick = useCallback(() => {
+    
+  }, []);
+
+  const onEmailClick = useCallback(() => {
+    window.location.href = "mailto:contact@iiamhealth.com";
   }, []);
   return (
     <footer className="self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-center text-sm text-darkslategray-200 font-head mq450:flex-col mq450:items-center mq450:justify-center">
@@ -39,24 +73,13 @@ const Footer = () => {
                       Contact Us
                     </div>
                   </div>
-                  <div className="self-stretch relative leading-[20px] text-black whitespace-nowrap">
+                  <div className="cursor-pointer self-stretch relative leading-[20px] text-black whitespace-nowrap" onClick={onEmailClick}>
                     contact@iiamhealth.com
                   </div>
                 </div>
               </div>
-              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[34px] pl-[33.799999999999955px]">
+              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[34px] pl-[57.8px]">
                 <div className="flex-1 flex flex-row items-start justify-start gap-[12px]">
-                  <div
-                    className="h-6 w-6 relative max-w-[200px] cursor-pointer"
-                    onClick={onLinkContainerClick}
-                  >
-                    <img
-                      className="absolute top-[0px] left-[0px] w-6 h-6 overflow-hidden"
-                      loading="lazy"
-                      alt=""
-                      src="/svg.svg"
-                    />
-                  </div>
                   <div
                     className="h-6 w-6 relative max-w-[200px] cursor-pointer"
                     onClick={onLinkContainer1Click}
@@ -101,22 +124,22 @@ const Footer = () => {
                 </div>
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-[34px]">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[52px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[52px]" onClick={onProductClick}>
                   Product
                 </div>
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-[41px]">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[38px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[38px]"onClick={onNewsClick}>
                   News
                 </div>
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-[29px]">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[62px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[62px]"onClick={onAboutUsClick}>
                   About Us
                 </div>
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-4">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[88px]">
+                <div className=" cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[88px]"onClick={onBookDemoClick}>
                   Book a Demo
                 </div>
               </div>
@@ -131,27 +154,18 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-[38px]">
-                <p
-                  className="self-stretch relative leading-[20px] text-[inherit] inline-block [text-decoration:none] min-w-[123px]"
-                  href=""
-                  target="_blank"
-                >
-                  Partners Overview
-                </p>
-              </div>
               <div className="w-[178px] rounded-lg flex flex-col items-center justify-start py-2 px-9 box-border">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[106px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[106px]" onClick={onNSFFoundationClick}>
                   NSF Foundation
                 </div>
               </div>
               <div className="w-[117px] rounded-lg flex flex-col items-center justify-start py-2 px-4 box-border">
-                <div className="self-stretch relative leading-[20px] inline-block min-w-[85px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px] inline-block min-w-[85px]" onClick={onUCSFHealthClick}>
                   UCSF Health
                 </div>
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-4">
-                <div className="self-stretch relative leading-[20px]">
+                <div className="cursor-pointer self-stretch relative leading-[20px]" onClick={onKennedyKriegerClick}>
                   Kennedy Krieger Institute
                 </div>
               </div>
@@ -168,9 +182,8 @@ const Footer = () => {
               </div>
               <div className="self-stretch rounded-lg flex flex-col items-center justify-start py-2 px-4 text-black">
                 <p
-                  className="self-stretch relative leading-[20px] text-[inherit] inline-block [text-decoration:none] min-w-[91px]"
-                  href=""
-                  target="_blank"
+                  className="cursor-pointer self-stretch relative leading-[20px] text-[inherit] inline-block [text-decoration:none] min-w-[91px]"
+                  onClick={onOurCompanyClick}
                 >
                   Our Company
                 </p>

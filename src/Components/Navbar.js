@@ -62,7 +62,7 @@ const Navbar = () => {
               About Us
             </button>
           </ul>
-          <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue rounded-4xl flex flex-row items-center justify-center hover:bg-darkcyan">
+          <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-cadetblue rounded-4xl flex flex-row items-center justify-center hover:bg-slategray">
             <p
               className="m-0 relative text-sm font-semibold font-montserrat text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0"
               onClick={onBookDemoClick}

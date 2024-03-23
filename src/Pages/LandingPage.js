@@ -1,7 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import BackgroundImage from "../Components/Background";
-import { Tilt } from "react-tilt";
 import Testimonial from "../Components/Testimonial";
 import Footer from "../Components/Footer";
 
@@ -35,6 +34,22 @@ const LandingPage = () => {
       }
     };
   }, []);
+  const navigate = useNavigate();
+  const onLM1Click = useCallback(() => {
+    navigate("/product-page");
+  }, [navigate]);
+  const onNSFFoundationClick = useCallback(() => {
+    window.open("https://www.ucsfhealth.org/");
+
+  }, []);
+  const onUCSFHealthClick = useCallback(() => {
+    window.open("https://www.nsf.gov/");
+
+  }, []);
+  const onKennedyKriegerClick = useCallback(() => {
+    window.open("https://www.kennedykrieger.org/");
+
+  }, []);
   return (
     <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
       <Navbar />
@@ -57,7 +72,8 @@ const LandingPage = () => {
                 An intelligent patient referral system to help subspecialty
                 practices grow!
               </p>
-              <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue rounded-4xl flex flex-row items-center justify-center sm:w-[130px] sm:h-[30px] hover:bg-silver">
+              <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue rounded-4xl flex flex-row items-center justify-center sm:w-[130px] sm:h-[30px] hover:bg-slategray"
+              onClick={onLM1Click}>
                 <p className="m-0 relative text-sm font-semibold font-head text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0 sm:text-[12px]">
                   Learn More
                 </p>
@@ -94,7 +110,7 @@ const LandingPage = () => {
                 patient referrals, access AI-generated insights, and track key
                 performance indicators
               </p>
-              <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue rounded-4xl flex flex-row items-center justify-center sm:w-[130px] sm:h-[30px] hover:bg-silver">
+              <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue rounded-4xl flex flex-row items-center justify-center sm:w-[130px] sm:h-[30px] hover:bg-slategray" onClick={onLM1Click}>
                 <p className="m-0 relative text-sm font-semibold font-head text-white text-center flex items-center justify-center w-[119px] h-[23px] shrink-0 sm:text-[12px]">
                   Learn More
                 </p>
@@ -128,22 +144,25 @@ const LandingPage = () => {
           <div className="self-stretch flex flex-col items-center justify-start py-0 px-20 md:px-0">
             <div className="self-stretch flex flex-row items-center justify-between py-0 px-[30px] gap-[20px] mq750:flex-wrap mq750:justify-center">
               <img
-                className="h-10 w-[234px] relative object-contain"
+                className="cursor-pointer h-10 w-[234px] relative object-contain"
                 loading="lazy"
                 alt=""
                 src="/ucsf@2x.png"
+                onClick={onUCSFHealthClick}
               />
               <img
-                className="h-[116px] w-[116px] relative object-cover"
+                className="cursor-pointer h-[116px] w-[116px] relative object-cover"
                 loading="lazy"
                 alt=""
                 src="/nsf@2x.png"
+                onClick={onNSFFoundationClick}
               />
               <img
-                className="h-[93px] w-[218px] relative object-contain"
+                className="cursor-pointer h-[93px] w-[218px] relative object-contain"
                 loading="lazy"
                 alt=""
                 src="/kki@2x.png"
+                onClick={onKennedyKriegerClick}
               />
             </div>
           </div>

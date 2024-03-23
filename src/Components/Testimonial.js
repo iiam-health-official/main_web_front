@@ -1,12 +1,12 @@
 const Testimonial = ({Title, Content}) => {
   return (
-    <div className="h-[368px] w-[356px] flex flex-col items-start justify-start py-2.5 px-1 box-border min-w-[142px] max-w-full text-left text-smi text-black font-head lg:items-center lg:justify-center">
+    <div className="h-[368px] w-[356px] flex flex-col items-start justify-start py-2.5 px-1 box-border min-w-[142px] max-w-full text-left text-smi text-white font-head lg:items-center lg:justify-center">
       <div className="w-[348px] h-[348px] overflow-hidden shrink-0 flex flex-col items-center justify-between pt-[49px] px-[42px] pb-[53px] box-border relative z-[2] lg:items-center lg:justify-center">
         <div className="w-[75.86%] h-[35.92%] absolute !m-[0] top-[27.01%] left-[12.07%] leading-[25px] font-semibold inline-block text-lg"> 
           {Content}
         </div>
         <div className="!m-[0] absolute h-[13.22%] w-[67.53%] top-[71.55%] right-[18.39%] bottom-[15.23%] left-[14.08%] flex flex-row items-center justify-center  box-border text-xs text-gray-500">
-          <div className="h-5 w-[170px] flex flex-col items-start justify-start py-0 px-0 box-border">
+          <div className="h-5 w-[170px] flex flex-col items-center justify-start py-0 px-0 box-border">
             <div className="relative leading-[25px] font-semibold whitespace-nowrap "> 
               {Title}
             </div>
