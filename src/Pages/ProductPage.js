@@ -138,13 +138,13 @@ const ProductPage = () => {
               data-animate-on-scroll
             >
               <h1 className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit inline-block [text-shadow:-2px_4px_0px_#19a8bd] sm:text-[25px]">
-                What makes IIAM No-Brainer!
+                What makes IIAM a No-Brainer!
               </h1>
               <div className="self-stretch flex flex-col items-center justify-start text-6xl-4 font-paragraph-p2-regular">
                 <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[100px]">
                   <div className="w-[316px] rounded-[16.94px] h-[583px] overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[20px]">
                     <h2 className=" m-0 self-stretch relative text-bold font-fixed w-[316px] h-[62px] top-0 left-0 [font-family:'Inter-SemiBold',Helvetica] font-semibold text-white text-[25.4px] text-center tracking-[0] leading-[normal]">
-                      Office Management Softwarre
+                      Office Management Software
                     </h2>
                     <img
                       className="w-[269px] relative h-[468px] object-cover"
