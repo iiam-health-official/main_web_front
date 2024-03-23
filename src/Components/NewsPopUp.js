@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const NewsPopUp = ({ onClose }) => {
+const NewsPopUp = ({ onClose, Content, Heading }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]",
@@ -42,28 +42,11 @@ const NewsPopUp = ({ onClose }) => {
           src="/avater-02@2x.png"
         />
         <p className="m-0 self-stretch relative tracking-[-0.02em] font-bold">
-          News Article 1
+          {Heading}
         </p>
         <i className="self-stretch relative text-sm tracking-[-0.02em] leading-[30px] font-head text-black text-left sm:text-sm sm:w-[350px]">
           <p className="m-0">
-            Founded in 2021, IIAM (Important Information About Me) is a desktop
-            software enabling physicians to 1) request medical information from
-            other healthcare providers, 2) keep track of their requests to
-            ensure a closed-loop referral process, 3) upload information to
-            complete requests made by other providers, and 4) download any
-            received information to their workstation. The IIAM software will
-            enable the efficient transfer of official medical documentation and
-            imaging among healthcare providers, saving an immense amount of
-            time, finances, and energy.
-          </p>
-          <p className="m-0"> </p>
-          <p className="m-0">
-            IIAM will be used most commonly in the case of patients with complex
-            medical conditions, who often receive care from multiple healthcare
-            centers and receive referrals to specialists. The use of IIAM in
-            such situations prevents excessive resources from being used on
-            obtaining “outside” medical documentation and collateral imaging
-            with each referral and new patient encounter.
+            {Content}
           </p>
         </i>
       </div>

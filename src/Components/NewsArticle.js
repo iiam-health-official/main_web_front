@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import NewsPopUp from "./NewsPopUp";
 import PortalPopup from "./PortalPopup";
 
-const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
+const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink, Content }) => {
   const [isNewsPopUpPopupOpen, setNewsPopUpPopupOpen] = useState(false);
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -38,7 +38,9 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
   }, []);
 
   const onLearnMoreClick = useCallback(() => {
-    window.open(LMLink);
+    if (LMLink){
+      window.open(LMLink);
+    }
   }, []);
 
   const closeNewsPopUpPopup = useCallback(() => {
@@ -76,15 +78,15 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink }) => {
           </div>
         </div>
       </div>
-      {/* {isNewsPopUpPopupOpen && (
+      {isNewsPopUpPopupOpen && (
       <PortalPopup
         overlayColor="rgba(113, 113, 113, 0.3)"
         placement="Centered"
         onOutsideClick={closeNewsPopUpPopup}
       >
-        <NewsPopUp onClose={closeNewsPopUpPopup} />
+        <NewsPopUp onClose={closeNewsPopUpPopup} Content={Content} Heading={Heading} />
       </PortalPopup>
-    )} */}
+    )}
     </>
   );
 };

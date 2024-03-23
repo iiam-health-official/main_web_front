@@ -49,18 +49,26 @@ const NewsPage = () => {
             Overview="IIAM's study on using machine learning for predicting head and neck cancer surgery recommendations was published in the Head and Neck journal. The research showcases the model's accuracy based on extensive patient data."
             Date="Feb 12, 2024"
             LMLink="https://onlinelibrary.wiley.com/doi/10.1002/hed.27674"
+            Content="IIAM recently published its results in using a supervised machine learning model for identifying predictive factors for recommending head and neck cancer surgery in a leading international otorhinolaryngology journal - Head and Neck. 
+
+            Head and Neck is an internationally regarded peer-reviewed journal dedicated to publishing research in the diagnosis and management of head and neck diseases. In this study, IIAM demonstrates how machine learning modeling accurately predicts head and neck cancer surgery recommendations based on patient and cancer information from a large population-based dataset. Machine learning adjuncts for referral processing also decrease the time to treatment for patients with cancer.
+            "
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="Global Cancer Conference"
             Overview="Max Jiam, co-CTO of IIAM, presented their findings on a machine learning model for head and neck cancer surgery at the AHNS International Conference. The event was attended by leading physicians worldwide."
             Date="July 12, 2023"
+            Content="Max Jiam, IIAM co-CTO, was invited to present at the AHNS (American Head and Neck Society) 11th International Conference on Head and Neck Cancer in Montreal, Canada. His talk, entitled, “A supervised machine learning model for identifying predictive factors for recommending head and neck cancer surgery”. The international attendance base for the meeting includes 1,500 head and neck surgeons, radiologists and oncologists. Among these physicians are high-ranking surgeons and physicians, many of whom are the heads of their departments, as well as those at the beginning of their careers.
+            "
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="NSF Grant Achievement"
             Overview="IIAM was awarded an NSF SBIR Phase I grant for developing predictive analytics and machine learning modeling for cancer referrals. This grant facilitates technology advancement for faster patient treatment."
             Date="Aug 10, 2023"
+            Content="IIAM Health was just awarded a National Science Foundation (NSF) SBIR Phase I award to develop predictive analytics and machine learning modeling to process cancer referrals. This non-dilutive grant awards $275,000 of funding to start-ups with innovative solutions to the world’s most pressing needs. Over the next year, IIAM will be focused on de-risking the technological solution to address triaging cancer referrals for tertiary healthcare centers.
+            "
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
@@ -68,12 +76,16 @@ const NewsPage = () => {
             Overview="Dr. Nicole Jiam and her team won an NSF Innovation Corporation Research Grant for translating digital health products into the marketplace. The program includes a $50,000 award."
             Date="Nov 2, 2021"
             LMLink="https://ohns.ucsf.edu/news/ohns-resident-and-team-win-50000-grant-their-healthcare-invention"
+            Content="Dr. Nicole Jiam, CEO, is part of a team that has been awarded the National Science Foundation (NSF) Innovation Corporation Research Grant. The award consists of $50,000 and an intensive seven-week program to help the team translate the clinically meaningful digital health product into the marketplace.
+            "
           />
           <NewsArticle
             Logo="/avater-02@2x.png"
             Heading="LaunchPad Fellowship"
             Overview="The IIAM team was selected for the Blackstone LaunchPad Fellowship, focusing on entrepreneurial skills for building successful businesses. This program supports innovative student ventures."
             Date="May 20, 2021"
+            Content="The IIAM team was selected as a Blackstone Launchpad Fellow - a signature program of the Blackstone Charitable Foundation and TechStarts. This 8 week program selects the nation’s most promising students with high entrepreneurial skills and potential and teaches them the skills needed to build a successful business. All fellows are given a non-dilutive award to jump-start their ventures. Fellows are also connected with like-minded builders and attend workshops on core entrepreneurial fundamentals such as  ideation, design thinking, research, data analysis, customer discovery, business models, networking and more.
+            "
           />
         </section>
         <button
