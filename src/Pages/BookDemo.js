@@ -62,7 +62,7 @@ const BookADemo = () => {
                       </div>
                     </div>
                     <select className="w-full h-[41px] rounded-10xs bg-whitesmoke-100 box-border flex flex-row items-center justify-center pt-[11px] px-[11px] pb-[11.000000000000014px] font-helvetica-neue text-base text-silver max-w-[152px] border-[1px] border-solid border-lightgray">
-                      <option value="pc">Primary Care Practitionar</option>
+                      <option value="pc">Primary Care Practitioner</option>
                       <option value="ps">Physician</option>
                       <option value="admin">Administrator</option>
                     </select>
