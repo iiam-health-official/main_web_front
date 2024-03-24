@@ -44,7 +44,7 @@ const BookADemo = () => {
             </div>
         <section className="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
           <div className="flex flex-row items-start justify-start max-w-[480px] mq675:gap-[32px_16px] mq675:max-w-full">
-            <form className="m-0 w-[480px] overflow-hidden shrink-0 flex flex-col items-end justify-start pt-0 pb-[33.5px] pr-[151px] pl-0 box-border gap-[37.19999999999999px] max-w-full mq450:pr-5 mq450:box-border mq675:gap-[19px_37.19999999999999px] mq675:pr-[75px] mq675:box-border">
+            <div className="m-0 w-[480px] overflow-hidden shrink-0 flex flex-col items-end justify-start pt-0 pb-[33.5px] pr-[151px] pl-0 box-border gap-[37.19999999999999px] max-w-full mq450:pr-5 mq450:box-border mq675:gap-[19px_37.19999999999999px] mq675:pr-[75px] mq675:box-border">
               <div className="mr-[-151.30000000000018px] w-[480.3px] flex flex-col items-start justify-start py-0 pr-px pl-0 box-border shrink-0 max-w-[146%]">
                 <Fieldset FirstField="First name" SecondField="Last name" state={state} setState={setState}/>
                 <Fieldset FirstField="Email" SecondField="Phone number" state={state} setState={setState}/>
@@ -58,7 +58,7 @@ const BookADemo = () => {
                   Book Now
                 </div>
               </button>
-            </form>
+            </div>
           </div>
           
         </section>
