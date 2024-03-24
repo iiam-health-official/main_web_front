@@ -88,7 +88,7 @@ const NewsPage = () => {
             "
           />
         </section>
-        <button
+        {/* <button
           className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue w-[218px] rounded-4xl flex flex-row items-center justify-start box-border gap-[10px] whitespace-nowrap hover:bg-slategray active:animate-[1s_ease_0s_infinite_normal_none_shadow-drop-bottom] active:opacity-[1]"
           id="Show-More"
         >
@@ -102,7 +102,7 @@ const NewsPage = () => {
               src="/leftarrow@2x.png"
             />
           </div>
-        </button>
+        </button> */}
       </div>
     </div>
   );

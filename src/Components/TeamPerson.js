@@ -36,15 +36,15 @@ const TeamPerson = ({ Image, Name, Position, Description }) => {
           </span>
         </div>
       </button>
-      {/* {isPersonPopUpPopupOpen && (
+      {isPersonPopUpPopupOpen && (
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"
           placement="Centered"
           onOutsideClick={closePersonPopUpPopup}
         >
-          <PersonPopUp onClose={closePersonPopUpPopup} />
+          <PersonPopUp onClose={closePersonPopUpPopup} Image = {Image}Name={Name} Description={Description} Position={Position} />
         </PortalPopup>
-      )} */}
+      )}
     </>
   );
 };

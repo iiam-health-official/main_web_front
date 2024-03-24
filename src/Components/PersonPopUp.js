@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const PersonPopUp = ({ onClose }) => {
+const PersonPopUp = ({ onClose, Image, Name, Description, Position }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]",
@@ -37,26 +37,23 @@ const PersonPopUp = ({ onClose }) => {
     >
       <div className="w-[658px] h-[285px] flex flex-col items-center justify-center gap-[14px]">
         <img
-          className="w-[115px] relative rounded-121xl-5 h-[115px] object-cover"
+          className="w-[115px] relative rounded-[50%] h-[115px] object-cover"
           alt=""
           src={Image}
         />
         <div className="w-[658px] relative tracking-[-0.02em] leading-[30px] inline-block h-[148px] shrink-0 sm:text-sm sm:w-[350px]">
-          <p className="m-0">An Overview of IIAM</p>
           <p className="m-0">
-            Founded in 2021, IIAM (Important Information About Me) is a desktop
-            software enabling physicians to 1) request medical information from
-            other healthcare providers, 2)
+            {Description}
           </p>
         </div>
       </div>
       <div className="w-[194px] flex flex-col items-center justify-center text-lg text-gray-100">
         <div className="w-[194px] flex flex-col items-start justify-start gap-[4px]">
           <p className="m-0 w-[137px] relative tracking-[-0.02em] font-head inline-block">
-            Dec 2021
+            {Name}
           </p>
           <p className="m-0 w-[194px] relative tracking-[-0.02em] leading-[30px] inline-block">
-            Learn More
+            {Position}
           </p>
         </div>
       </div>

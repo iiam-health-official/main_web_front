@@ -68,16 +68,20 @@ const AboutUs = () => {
               Image="/Max.png"
               Name="Max Jiam"
               Position="Co-Founder & Co-CTO"
+              Description="Max Jiam is a graduate from Carnegie Mellon University, with a major in computer science with a machine learning/AI concentration. Prior to joining IIAM, he has worked on several mobile user interfaces as side projects, such as the dashboard for the TartanHacks hackathon and the Mites.io mobile interface. In his free time, he hangs out with friends, goes on walks, and satiates his obsession with boba tea.
+              "
             />
             <TeamPerson
               Image="/Nicole.jpeg"
               Name="Nicole Jiam"
               Position="Co-Founder & CEO"
+              Description="Dr. Nicole Jiam, a neurotologist and skull base surgeon at UCSF and executive director of the UCSF Otolaryngology Innovation Center, graduated from JHU with a neuroscience degree and received her medical degree from its School of Medicine. After completing her residency in Otolaryngology - Head and Neck Surgery at UCSF, she pursued a two-year Neurotology fellowship at Harvard Medical School. Her IIAM work has gained wide recognition, earning her the 2021 UCSF Catalyst Award and a 2021 Blackstone LaunchPad fellowship."
             />
             <TeamPerson
               Image="/Kevin.png"
               Name="Kevin Xin"
               Position="Co-Founder & Co-CTO"
+              Description="Dr. Kevin Xin is a diagnostic radiology resident at the University of California, Irvine. He completed his undergraduate degree in biomedical engineering at the Johns Hopkins University. Afterwards, he attended medical school at the Johns Hopkins University School of Medicine. His interests include machine learning and technology transfer. Since joining the IIAM team, Kevin has helped develop the software's machine learning algorithms and front end."
             />
           </div>
         </div>
