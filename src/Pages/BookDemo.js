@@ -1,10 +1,36 @@
+import { useState } from "react";
 import Fieldset from "../Components/FieldSet";
 import Navbar from "../Components/Navbar";
 import Testimonial from "../Components/Testimonial";
+import SuccessPopUp from "../Components/SuccessPopUp";
+
+
+
 
 const BookADemo = () => {
+  const [state, setState] = useState({});
+  const [modal, setModalShow] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateId = 'template_ktoeb9r';
+    window.emailjs.send(
+      process.env.REACT_APP_SERVICE_ID,
+      templateId,
+      {
+        message: Object.entries(state).map(([key, value]) => `${key}: ${value}`).join('\n'),
+        name: state["First name"],
+      }
+    ).then(res => {
+      setModalShow(true);
+    })
+// Handle errors here however you like, or use a React error boundary
+.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
+
   return (
     <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
+      <SuccessPopUp show={modal} onHide={() => setModalShow(false)} />
       <Navbar />
       <div className="w-full relative flex flex-col items-start justify-start pt-[110px] px-0 pb-[600px] box-border gap-[60px] tracking-[normal] text-center text-base text-white font-head mq675:gap-[30px_60px]">
         <div className="self-stretch relative leading-[24px] font-head">
@@ -20,12 +46,15 @@ const BookADemo = () => {
           <div className="flex flex-row items-start justify-start max-w-[480px] mq675:gap-[32px_16px] mq675:max-w-full">
             <form className="m-0 w-[480px] overflow-hidden shrink-0 flex flex-col items-end justify-start pt-0 pb-[33.5px] pr-[151px] pl-0 box-border gap-[37.19999999999999px] max-w-full mq450:pr-5 mq450:box-border mq675:gap-[19px_37.19999999999999px] mq675:pr-[75px] mq675:box-border">
               <div className="mr-[-151.30000000000018px] w-[480.3px] flex flex-col items-start justify-start py-0 pr-px pl-0 box-border shrink-0 max-w-[146%]">
-                <Fieldset FirstField="First name" SecondField="Last name" />
-                <Fieldset FirstField="Email" SecondField="Phone number" />
-                <Fieldset FirstField="Company" SecondField="Title" />
-                <Fieldset FirstField="Your Role" SecondField="Number of Practices" />
+                <Fieldset FirstField="First name" SecondField="Last name" state={state} setState={setState}/>
+                <Fieldset FirstField="Email" SecondField="Phone number" state={state} setState={setState}/>
+                <Fieldset FirstField="Company" SecondField="Title" state={state} setState={setState}/>
+                <Fieldset FirstField="Your Role" SecondField="Number of Practices" state={state} setState={setState}/>
               </div>
-              <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-darkslategray-100 w-[177px] rounded-4xl flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-slategray">
+              <button 
+              type="submit"
+              onClick={(e) => {e.preventDefault(); handleSubmit(e);}}
+              className="cursor-pointer [border:none] py-[9px] px-[29px] bg-darkslategray-100 w-[177px] rounded-4xl flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-slategray">
                 <div className="flex-1 relative text-sm font-semibold font-head text-white text-center">
                   Book Now
                 </div>
