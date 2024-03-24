@@ -52,7 +52,6 @@ const BookADemo = () => {
                 <Fieldset FirstField="Your Role" SecondField="Number of Practices" state={state} setState={setState}/>
               </div>
               <button 
-              type="submit"
               onClick={(e) => {e.preventDefault(); handleSubmit(e);}}
               className="cursor-pointer [border:none] py-[9px] px-[29px] bg-darkslategray-100 w-[177px] rounded-4xl flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-slategray">
                 <div className="flex-1 relative text-sm font-semibold font-head text-white text-center">
