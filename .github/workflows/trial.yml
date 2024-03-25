@@ -5,12 +5,12 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
 jobs:
   build:
 
-    permissions:
-      contents: read
-      pages: write
     runs-on: ubuntu-latest
 
     steps:
