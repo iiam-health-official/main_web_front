@@ -126,11 +126,11 @@ const ProductPage = () => {
                   providers, saving an immense amount of time, finances, and
                   energy.
                 </b>
-                <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue w-[186px] rounded-4xl flex flex-row items-center justify-between box-border gap-[10px] whitespace-nowrap hover:bg-slategray">
+                {/* <button className="cursor-pointer [border:none] py-[9px] px-[29px] bg-blue w-[186px] rounded-4xl flex flex-row items-center justify-between box-border gap-[10px] whitespace-nowrap hover:bg-slategray">
                   <div className="h-[23px] w-[119px] relative text-sm font-semibold font-montserrat text-white text-center inline-block shrink-0">
                     Learn More
                   </div>
-                </button>
+                </button> */}
               </div>
             </div>
             <div

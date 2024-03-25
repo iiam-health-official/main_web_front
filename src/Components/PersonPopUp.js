@@ -47,16 +47,6 @@ const PersonPopUp = ({ onClose, Image, Name, Description, Position }) => {
           </p>
         </div>
       </div>
-      <div className="w-[194px] flex flex-col items-center justify-center text-lg text-gray-100">
-        <div className="w-[194px] flex flex-col items-start justify-start gap-[4px]">
-          <p className="m-0 w-[137px] relative tracking-[-0.02em] font-head inline-block">
-            {Name}
-          </p>
-          <p className="m-0 w-[194px] relative tracking-[-0.02em] leading-[30px] inline-block">
-            {Position}
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
