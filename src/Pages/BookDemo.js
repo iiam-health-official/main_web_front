@@ -2,17 +2,18 @@ import { useState } from "react";
 import Fieldset from "../Components/FieldSet";
 import Navbar from "../Components/Navbar";
 import Testimonial from "../Components/Testimonial";
-import SuccessPopUp from "../Components/SuccessPopUp";
 
 
 
 
 const BookADemo = () => {
   const [state, setState] = useState({});
-  const [modal, setModalShow] = useState(false);
+  const [show, setShow] = useState(false);
+  const [statusTxt, setStatusTxt] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setStatusTxt("Submitting...");
     const templateId = 'template_ktoeb9r';
     window.emailjs.send(
       "service_9bd2q8g",
@@ -22,16 +23,20 @@ const BookADemo = () => {
         name: state["First name"],
       }
     ).then(res => {
-      setModalShow(true);
+      setStatusTxt("Success! Your submission was successful. We'll be in contact soon.");
+      setShow(true);
     })
 // Handle errors here however you like, or use a React error boundary
-.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-    setModalShow(true);
+.catch(err => {
+  console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)
+  setShow(true);
+  setStatusTxt("Sorry! Your submission was unsuccessful. Please try again later.");
+})
+   
   }
 
   return (
     <>
-      <SuccessPopUp show={modal} onHide={() => setModalShow(false)} />
     <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
       <Navbar />
       <div className="w-full relative flex flex-col items-start justify-start pt-[110px] px-0 pb-[600px] box-border gap-[60px] tracking-[normal] text-center text-base text-white font-head mq675:gap-[30px_60px]">
@@ -53,6 +58,8 @@ const BookADemo = () => {
                 <Fieldset FirstField="Company" SecondField="Title" state={state} setState={setState}/>
                 <Fieldset FirstField="Your Role" SecondField="Number of Practices" state={state} setState={setState}/>
               </div>
+              {show && <p >{statusTxt}</p>}
+
               <button 
               type="button"
               onClick={(e) => {e.preventDefault(); handleSubmit(e);}}

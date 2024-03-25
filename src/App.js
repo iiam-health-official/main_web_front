@@ -5,7 +5,6 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from "./Pages/LandingPage";
 import NewsPage from "./Pages/NewsPage";
 import ProductPage from "./Pages/ProductPage";
