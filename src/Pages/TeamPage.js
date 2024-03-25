@@ -75,7 +75,7 @@ const AboutUs = () => {
               Image="/Nicole.jpeg"
               Name="Nicole Jiam"
               Position="Co-Founder & CEO"
-              Description="Dr. Nicole Jiam, a neurotologist and skull base surgeon at UCSF and executive director of the UCSF Otolaryngology Innovation Center, graduated from JHU with a neuroscience degree and received her medical degree from its School of Medicine. After completing her residency in Otolaryngology - Head and Neck Surgery at UCSF, she pursued a two-year Neurotology fellowship at Harvard Medical School. Her IIAM work has gained wide recognition, earning her the 2021 UCSF Catalyst Award and a 2021 Blackstone LaunchPad fellowship."
+              Description="Dr. Nicole Jiam, a neurotologist and skull base surgeon at UCSF and executive director of the UCSF Otolaryngology Innovation Center, graduated from JHU with a neuroscience degree and received her medical degree from its School of Medicine. Post-residency in Otolaryngology - Head and Neck Surgery at UCSF, she pursued a two-year Neurotology fellowship at Harvard Medical School. Her work at IIAM has earned her the 2021 UCSF Catalyst Award and a 2021 Blackstone LaunchPad fellowship."
             />
             <TeamPerson
               Image="/Kevin.png"

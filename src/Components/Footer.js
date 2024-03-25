@@ -50,7 +50,7 @@ const Footer = () => {
     <footer className="self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-center text-sm text-darkslategray-200 font-head mq450:flex-col mq450:items-center mq450:justify-center">
       <div className="flex-1 flex flex-col items-start justify-start gap-[30px] max-w-full mq450:flex-[unset] mq450:self-stretch">
         <div className="self-stretch flex flex-row flex-wrap items-center justify-between py-0 px-[60px]  box-border max-w-full mq450:flex-col mq450:gap-[5px_212.1px] mq450:items-center mq450:justify-center mq675:gap-[212.1px_18px]">
-          <div className="h-[188px] w-[157px] flex flex-col items-start justify-start pt-14 px-0 pb-0 box-border">
+          <div className="h-[188px] w-[157px] flex flex-col items-start justify-start px-0 pb-0 box-border">
             <div className="self-stretch flex-1 flex flex-row items-center justify-center bg-[url('/public/Logo_SQ_Trans.png@2x.png')] bg-cover bg-no-repeat bg-[top]">
               <img
                 className="h-[132px] flex-1 relative max-w-full overflow-hidden object-cover hidden"
@@ -60,15 +60,15 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-60 flex flex-col items-start justify-start pt-[30px] px-0 pb-0 box-border">
-            <div className="self-stretch flex flex-col items-start justify-start py-0 pr-[37.799999999999955px] pl-[38.200000000000045px] gap-[52px]">
-              <div className="self-stretch flex flex-col items-end justify-start gap-[44px]">
-                <div className="flex flex-row items-start justify-end py-0 pr-[7.900000000000091px] pl-2">
+            <div className="self-stretch flex flex-col items-start justify-start py-0 pr-[37.8] pl-[38.2] gap-[52px]">
+              <div className="self-stretch flex flex-col items-center justify-center gap-[44px]">
+                <div className="flex flex-row items-start justify-center py-0 ">
                   <div className="w-[130px] relative leading-[20px] flex items-center justify-center">
                     San Fransisco, USA
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-end justify-start gap-[4px] text-darkslateblue">
-                  <div className="flex flex-row items-start justify-end py-0 pr-[40.799999999999955px] pl-[47px]">
+                <div className="self-stretch flex flex-col items-center justify-start gap-[4px] text-darkslateblue">
+                  <div className="flex flex-row items-start justify-end py-0">
                     <div className="w-[76px] relative leading-[20px] font-semibold flex items-center justify-center min-w-[76px]">
                       Contact Us
                     </div>
@@ -78,8 +78,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[34px] pl-[57.8px]">
-                <div className="flex-1 flex flex-row items-start justify-start gap-[12px]">
+              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[34px] pl-[34px]">
+                <div className="flex-1 flex flex-row items-start justify-center gap-[12px]">
                   <div
                     className="h-6 w-6 relative max-w-[200px] cursor-pointer"
                     onClick={onLinkContainer1Click}
@@ -106,7 +106,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex rounded-[36px] flex-row items-center justify-start py-0 pr-0 pl-[35px] box-border relative gap-[82px] min-w-[335px] min-h-[244px]  text-black mq450:flex-col mq450:gap-[20px_82px] mq450:items-center mq450:justify-center mq450:flex-[unset] mq450:self-stretch mq675:flex-wrap mq675:gap-[82px_41px]">
+          <div className="flex rounded-[36px] flex-row  justify-start py-0 pr-0 pl-[35px] box-border relative gap-[82px] min-w-[335px] min-h-[244px]  text-black mq450:flex-col mq450:gap-[20px_82px] mq450:items-center mq450:justify-center mq450:flex-[unset] mq450:self-stretch mq675:flex-wrap mq675:gap-[82px_41px]">
             <img
               className="h-[275px] w-[664px] absolute !m-[0] top-[-11px] left-[3px] overflow-hidden shrink-0 mq450:hidden mq450:w-[400px] mq450:h-[550px] mq450:flex-col mq450:items-center mq450:justify-center"
               loading="lazy"
