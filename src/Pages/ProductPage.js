@@ -41,7 +41,7 @@ const ProductPage = () => {
               className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit flex items-center justify-center [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] mq450:text-3xl mq900:text-10xl"
               data-animate-on-scroll
             >
-              A One Step Solution
+              Problem
             </h1>
             <h2
             style={{
@@ -51,9 +51,37 @@ const ProductPage = () => {
             }}
             className=" self-stretch h-[16px] relative font-bold font-inherit flex items-center justify-center [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] leading-[20px]"
             data-animate-on-scroll>
-            Nearly 1 in 3 new patient referrals to specialty physicians are never completed. Oftentimes, this is a result of incomplete medical records, delays in scheduling, and overall lack of transparency. As a result many patients with potentially serious conditions are not receiving the medical care they need. IIAM is a cloud-based file exchange platform with AI-generated analytics that streamlines the new patient referral process, reduces delays in patient care, and optimizes subspecialty practices. 
+            Nearly 1 in 3 new patient referrals to specialty physicians are never completed. Oftentimes, this is a result of incomplete medical records, delays in scheduling, and overall lack of transparency. As a result many patients with potentially serious conditions are not receiving the medical care they need. 
+            </h2>
+            <h1
+              className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit flex items-center justify-center [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] mq450:text-3xl mq900:text-10xl"
+              data-animate-on-scroll
+            >
+              One stop solution
+            </h1>
+            
+            <h2
+            style={{
+              fontSize: "20px",
+              padding: "5% 20%",
+              lineHeight: "35px"
+            }}
+            className=" self-stretch h-[16px] relative font-bold font-inherit flex items-center justify-center [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] leading-[20px]"
+            data-animate-on-scroll>
+            IIAM (Important Information About Me) is a cloud-based software enabling: <br />
+
+            Patient self-scheduling and evidence-based referral routing<br />
+            Practice coordinators to keep track of their requests to ensure a closed-loop referral process<br />
+            Operation managers to gain insights on their referral patterns and network<br />
+            Physicians to have more appropriately scheduled and triaged clinics<br />
+            Patients to see their doctors quicker and receive better quality care
+
 
             </h2>
+            
+            
+            
+            
             <section className="w-[1082px] flex flex-col items-center justify-start py-0 px-5 box-border max-w-full">
               <img
                 className="self-stretch relative max-w-full overflow-hidden max-h-full object-cover"
@@ -62,6 +90,24 @@ const ProductPage = () => {
                 src="/clip-path-group@2x.png"
               />
             </section>
+
+            <h2
+            style={{
+              fontSize: "20px",
+              padding: "5% 20%",
+              lineHeight: "35px"
+            }}
+            className=" self-stretch h-[16px] relative font-bold font-inherit flex items-center justify-center [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] leading-[20px]"
+            data-animate-on-scroll>
+            In addition, IIAM has built-in analytics offering insights on individual patients, practice, referring providers, and competitors. 
+
+            The IIAM software will also enable efficient transfer of official medical documentation and imaging among healthcare providers in a predominantly fax-based drive system, saving an immense amount of time, finances, and energy.
+
+            IIAM will be used most commonly in the case of patients with complex medical conditions, who often receive care from multiple healthcare centers and receive referrals to specialists. The use of IIAM in such situations improves resource allocation and expenditures both within the community and at tertiary healthcare centers. 
+
+
+            </h2>
+
 
             <div className="self-stretch flex flex-col items-center justify-center">
               <img
