@@ -4,7 +4,6 @@ import {
   Route,
   useNavigationType,
   useLocation,
-  BrowserRouter,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from "./Pages/LandingPage";

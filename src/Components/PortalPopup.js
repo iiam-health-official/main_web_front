@@ -52,11 +52,13 @@ const PortalPopup = ({
           style.alignItems = "flex-end";
           style.justifyContent = "flex-end";
           break;
+        default:
+          break;
       }
     }
     style.opacity = 1;
     return style;
-  }, [placement, overlayColor, zIndex, relativeLayerRef?.current]);
+  }, [placement, overlayColor, zIndex, relativeLayerRef]);
 
   const setPosition = useCallback(() => {
     const relativeItem = relativeLayerRef?.current?.getBoundingClientRect();
@@ -102,8 +104,8 @@ const PortalPopup = ({
     top,
     bottom,
     placement,
-    relativeLayerRef?.current,
-    relContainerRef?.current,
+    relativeLayerRef,
+    relContainerRef
   ]);
 
   useEffect(() => {
