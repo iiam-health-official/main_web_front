@@ -41,8 +41,19 @@ const ProductPage = () => {
               className="m-0 self-stretch h-[41px] relative text-inherit font-bold font-inherit flex items-center justify-center [text-shadow:-2px_4px_0px_#2f6d8c] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] mq450:text-3xl mq900:text-10xl"
               data-animate-on-scroll
             >
-              One Stop Solution
+              A One Step Solution
             </h1>
+            <h2
+            style={{
+              fontSize: "20px",
+              padding: "5% 20%",
+              lineHeight: "35px"
+            }}
+            className=" self-stretch h-[16px] relative font-bold font-inherit flex items-center justify-center [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] leading-[20px]"
+            data-animate-on-scroll>
+            Nearly 1 in 3 new patient referrals to specialty physicians are never completed. Oftentimes, this is a result of incomplete medical records, delays in scheduling, and overall lack of transparency. As a result many patients with potentially serious conditions are not receiving the medical care they need. IIAM is a cloud-based file exchange platform with AI-generated analytics that streamlines the new patient referral process, reduces delays in patient care, and optimizes subspecialty practices. 
+
+            </h2>
             <section className="w-[1082px] flex flex-col items-center justify-start py-0 px-5 box-border max-w-full">
               <img
                 className="self-stretch relative max-w-full overflow-hidden max-h-full object-cover"
@@ -51,6 +62,7 @@ const ProductPage = () => {
                 src="/clip-path-group@2x.png"
               />
             </section>
+
             <div className="self-stretch flex flex-col items-center justify-center">
               <img
                 className="w-[171px] h-[15px] relative object-contain"
