@@ -3,7 +3,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 function SuccessPopUp({show, onHide}) {
     return (
-        <Modal show={show} onHide={onHide}>
+        <Modal show={show} onHide={onHide} variant="dark">
             <Modal.Header closeButton>
                 <Modal.Title>Success</Modal.Title>
             </Modal.Header>

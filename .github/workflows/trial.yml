@@ -24,7 +24,7 @@ jobs:
         REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
 
     - name: Deploy
-      uses: iiam-health-official/github-pages-deploy-action@releases/v3
+      uses: iiam-health-official/main_web_front
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
