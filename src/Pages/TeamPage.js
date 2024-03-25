@@ -35,7 +35,7 @@ const AboutUs = () => {
   return (
     <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
       <Navbar />
-      <div className="w-full relative h-[1734px] flex flex-col items-center justify-start p-[30px]  pt-[100px] box-border gap-[65px] text-center  text-white  font-head">
+      <div className="w-full relative h-[1885px] flex flex-col items-center justify-start p-[30px]  pt-[100px] box-border gap-[65px] text-center  text-white  font-head">
         <p className="m-0 w-[730px] relative font-bold flex items-center justify-center text-center text-[36px] text-white font-head [text-shadow:-2px_4px_0px_#2f6d8c] ">
           People who made it Successful
         </p>
@@ -51,17 +51,35 @@ const AboutUs = () => {
                 src="/rectangle@2x.png"
               />
               <h2 className="m-0 flex-1 relative leading-[120%] font-head text-[23px] inline-block max-w-full z-[2] mq450:text-lg mq450:leading-[22px] mq750:text-5xl mq750:leading-[29px]">
-                IIAM is an intelligent patient referral management system.
-                Founded in October 2022 by a team of physicians, computer
-                scientists, and engineers, the IIAM team set out with the
-                mission of streamlining the new patient referral process and
-                ensuring patients are able to receive the highest quality care
-                in a timely manner.
+              At IIAM Corporation, we are driven by our unwavering commitment to efficient, accurate, and transparent patient care. We envision a world where all patients are able to access the care that they need. Our mission is to use technology to address primarily fax-driven approaches towards medical information exchange and to use machine learning to support patient referral processing and triaging.
               </h2>
             </div>
           </div>
         </section>
 
+        <div className="self-stretch flex flex-col items-center justify-start gap-[0px] max-w-full text-center text-17xl text-white font-arial">
+
+        <p className="m-0 w-[730px] relative font-bold flex items-center justify-center text-center text-[36px] text-white font-head [text-shadow:-2px_4px_0px_#2f6d8c] ">
+          Our Values
+        </p>
+
+        <h2
+            style={{
+              fontSize: "20px",
+              padding: "5% 20%",
+              lineHeight: "35px"
+            }}
+            className=" self-stretch  relative font-bold font-inherit flex items-center justify-center [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] leading-[20px]"
+            data-animate-on-scroll>
+            Customer-Centricity: Our customers are at the heart of everything we do. We relentlessly seek to understand their needs, provide exceptional and financial value, and foster long-lasting relationships. <br />
+            Innovation: We are dedicated to pushing the boundaries of what's possible. We embrace change, encourage creativity, and continuously strive to develop cutting-edge solutions that transform industries.<br />
+            Integrity: Honesty, transparency, and ethical conduct are the cornerstones of our business. We act with the utmost integrity in all our interactions with customers, partners, and team members.<br />
+            Collaboration: We believe in the power of teamwork. We cultivate a culture of inclusivity, diversity, and mutual support, knowing that our collective intelligence is greater than the sum of individual efforts.<br />
+            Patient Care: Integrity and social responsibility are integral to our identity. We are committed to putting patients first and positively contributing to the communities in which we operate.
+ 
+            </h2>
+
+          </div>
         <div className="self-stretch flex flex-col items-center justify-center ">
           <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[170px]">
             <TeamPerson
