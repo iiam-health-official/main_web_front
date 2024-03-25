@@ -29,8 +29,9 @@ const BookADemo = () => {
   }
 
   return (
-    <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
+    <>
       <SuccessPopUp show={modal} onHide={() => setModalShow(false)} />
+    <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
       <Navbar />
       <div className="w-full relative flex flex-col items-start justify-start pt-[110px] px-0 pb-[600px] box-border gap-[60px] tracking-[normal] text-center text-base text-white font-head mq675:gap-[30px_60px]">
         <div className="self-stretch relative leading-[24px] font-head">
@@ -65,6 +66,7 @@ const BookADemo = () => {
         <div className="w-full hidden max-w-[760px] mq750:max-w-full" />
       </div>
     </div>
+    </>
   );
 };
 

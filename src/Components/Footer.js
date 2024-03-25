@@ -28,13 +28,13 @@ const Footer = () => {
   }, [navigate]);
 
   const onNSFFoundationClick = useCallback(() => {
-    window.open("https://www.ucsfhealth.org/");
-
-  }, []);
-  const onUCSFHealthClick = useCallback(() => {
     window.open("https://www.nsf.gov/");
-
   }, []);
+
+  const onUCSFHealthClick = useCallback(() => {
+    window.open("https://www.ucsfhealth.org/");
+  }, []);
+  
   const onKennedyKriegerClick = useCallback(() => {
     window.open("https://www.kennedykrieger.org/");
 
