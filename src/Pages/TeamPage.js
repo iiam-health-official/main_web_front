@@ -37,7 +37,7 @@ const AboutUs = () => {
       <Navbar />
       <div className="w-full relative h-[1885px] flex flex-col items-center justify-start p-[30px]  pt-[100px] box-border gap-[65px] text-center  text-white  font-head">
         <p className="m-0 w-[730px] relative font-bold flex items-center justify-center text-center text-[36px] text-white font-head [text-shadow:-2px_4px_0px_#2f6d8c] ">
-          People who made it Successful
+          Our Team
         </p>
 
         <section className="self-stretch flex flex-row items-start justify-start py-0 pr-[51px] pl-[51.5px] box-border max-w-full text-center text-white font-paragraph-p2-regular mq675:pl-[25px] mq675:pr-[25px] mq675:box-border">
