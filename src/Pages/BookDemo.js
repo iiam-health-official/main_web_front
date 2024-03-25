@@ -15,7 +15,7 @@ const BookADemo = () => {
     e.preventDefault();
     const templateId = 'template_ktoeb9r';
     window.emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
+      "service_9bd2q8g",
       templateId,
       {
         message: Object.entries(state).map(([key, value]) => `${key}: ${value}`).join('\n'),
