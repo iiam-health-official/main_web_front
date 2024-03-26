@@ -1,3 +1,4 @@
+
 import { useState, useCallback, useEffect } from "react";
 import NewsPopUp from "./NewsPopUp";
 import PortalPopup from "./PortalPopup";
@@ -41,7 +42,7 @@ const NewsArticle = ({ Logo, Heading, Overview, Date, LMLink, Content }) => {
     if (LMLink){
       window.open(LMLink);
     }
-  }, [LMLink]);
+  }, []);
 
   const closeNewsPopUpPopup = useCallback(() => {
     setNewsPopUpPopupOpen(false);

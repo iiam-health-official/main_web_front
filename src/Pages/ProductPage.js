@@ -70,11 +70,11 @@ const ProductPage = () => {
             data-animate-on-scroll>
             IIAM (Important Information About Me) is a cloud-based software enabling: <br />
 
-            Patient self-scheduling and evidence-based referral routing<br />
-            Practice coordinators to keep track of their requests to ensure a closed-loop referral process<br />
-            Operation managers to gain insights on their referral patterns and network<br />
-            Physicians to have more appropriately scheduled and triaged clinics<br />
-            Patients to see their doctors quicker and receive better quality care
+            - Patient self-scheduling and evidence-based referral routing<br />
+            - Practice coordinators to keep track of their requests to ensure a closed-loop referral process<br />
+            - Operation managers to gain insights on their referral patterns and network<br />
+            - Physicians to have more appropriately scheduled and triaged clinics<br />
+            - Patients to see their doctors quicker and receive better quality care
 
 
             </h2>

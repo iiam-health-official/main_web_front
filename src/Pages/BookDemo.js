@@ -24,7 +24,6 @@ const BookADemo = () => {
     ).then(res => {
       setModalShow(true);
     })
-// Handle errors here however you like, or use a React error boundary
 .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     setModalShow(true);
   }
@@ -35,7 +34,7 @@ const BookADemo = () => {
     <div className="inset-0 bg-cover bg-top text-center bg-[url('Background.svg')] bg-repeat ">
       <Navbar />
       <div className="w-full relative flex flex-col items-start justify-start pt-[110px] px-0 pb-[600px] box-border gap-[60px] tracking-[normal] text-center text-base text-white font-head mq675:gap-[30px_60px]">
-        <div className="self-stretch relative leading-[24px] font-head">
+        <div className="self-stretch relative font-semibold text-[20px] leading-[24px] font-head">
           Find out why healthcare professionals of tomorrow care about IIAM, and
           how it can upscale your practices
         </div>
